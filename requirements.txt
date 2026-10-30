@@ -1,0 +1,18 @@
+torch>=2.3            # install the CUDA build from https://pytorch.org for your GPU
+transformers>=4.40
+accelerate>=0.27
+sentencepiece
+pandas>=2.0
+numpy
+Pillow>=10.0
+opencv-python-headless   # preprocess_images.py (denoising + CLAHE)
+tqdm
+matplotlib            # eda.py
+nltk>=3.8             # BLEU / METEOR  (then: python -m nltk.downloader wordnet omw-1.4)
+rouge-score>=0.1.2    # ROUGE-L
+
+# optional
+peft>=0.10            # --use_lora
+bitsandbytes>=0.43    # --quantization 8bit / 4bit
+# f1chexbert          # evaluate.py --chexbert
+# radgraph            # evaluate.py --radgraph
